@@ -1,4 +1,5 @@
 import { Spotlight } from './ui/Spotlight'
+import { TextGenerateEffect } from './ui/TextGenerateEffect'
 
 export const Hero = () => {
   return (
@@ -14,7 +15,7 @@ export const Hero = () => {
         />
         <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
         </div>
-                < div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.3] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0  ">
+                < div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.03] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0  ">
             {/* Radial gradient for the container to give a faded look */}
             <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"/>
             <p className="text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">
@@ -27,6 +28,10 @@ export const Hero = () => {
                 <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
                     Dynamic Web Magic with NextJS
                 </h2>
+                <TextGenerateEffect
+                className="text-center text-[40px] md:text-5xl lg:text-6xl"
+                words="Transforming Concepts into Seamless Expirences"
+                />
             </div>
         </div>
         </div>
