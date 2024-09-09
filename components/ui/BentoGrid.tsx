@@ -105,25 +105,44 @@ export const BentoGridItem = ({
           {id === 2 && <GlobeDemo />}
          
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-              {/* tech stack lists */}
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                {["React", "Next.js", "TypeScript","AWS"].map((item) => (
-                  <span
-                    key={item}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {item}
-                  </span>
-                  
-                ))}
-                
-              </div>
-              
-            </div>
-          )}
-        
+  <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+    {/* tech stack lists */}
+    <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+      {["React", "Next.js", "TypeScript"].map((item) => (
+        <span
+          key={item}
+          className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+          lg:opacity-100 rounded-lg text-center bg-[#10132E] hover:bg-blue-500 transition duration-200"
+        >
+          {item}
+        </span>
+      ))}
+    </div>
+    <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+      {["Node.js", "GraphQL", "MongoDB"].map((item) => (
+        <span
+          key={item}
+          className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+          lg:opacity-100 rounded-lg text-center bg-[#10132E] hover:bg-blue-500 transition duration-200"
+        >
+          {item}
+        </span>
+      ))}
+    </div>
+    <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+      {["Docker", "Kubernetes", "AWS"].map((item) => (
+        <span
+          key={item}
+          className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+          lg:opacity-100 rounded-lg text-center bg-[#10132E] hover:bg-blue-500 transition duration-200"
+        >
+          {item}
+        </span>
+      ))}
+    </div>
+  </div>
+)}
+
         </div>
       </div>
     </div>
