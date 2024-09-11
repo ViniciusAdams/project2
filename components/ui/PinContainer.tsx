@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import { PinContainer } from "./3d-pin";
+import dynamic from 'next/dynamic';
+
 
 export function AnimatedPinDemo() {
   return (
@@ -24,3 +26,5 @@ export function AnimatedPinDemo() {
     </div>
   );
 }
+export { PinContainer };
+
